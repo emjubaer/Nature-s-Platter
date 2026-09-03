@@ -3,12 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>Nature's Platter</title>
 
-    <!-- Tailwind CSS Link -->
+    <!-- Tailwind CSS -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
-    <!-- Font Awesome Link-->
+    <!-- Font Awesome -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
@@ -17,29 +18,143 @@
       referrerpolicy="no-referrer"
     />
   </head>
+
   <body>
-    <nav class="w-[90%] mx-auto mt-4 grid grid-cols-3 items-center">
-      <!-- Logo -->
-      <img src="./assets/nav-logo.png" alt="" class=" items-center justify-center h-['60px'] w-auto" />
+    <header class="bg-[#EFEBE3]">
+      <!-- Navbar -->
+      <nav
+        class="w-[90%] md:w-4/5 mx-auto pt-4 flex items-center justify-between"
+      >
+        <!-- Logo -->
+        <div>
+          <img
+            src="./assets/nav-logo.png"
+            alt="Nature's Platter"
+            class="h-[50px] md:h-[60px] w-auto"
+          />
+        </div>
 
-     
-        <ul class="flex gap-4 items-center ">
-          <li>Product</li>
-          <li>Services</li>
-          <li>Contact Us</li>
+        <!-- Desktop Menu -->
+        <ul class="hidden md:flex items-center gap-6">
+          <li>
+            <a href="#" class="hover:text-[#179800]"> Product </a>
+          </li>
+
+          <li>
+            <a href="#" class="hover:text-[#179800]"> Services </a>
+          </li>
+
+          <li>
+            <a href="#" class="hover:text-[#179800]"> Contact Us </a>
+          </li>
         </ul>
-     
 
-      <div class="flex gap-4 items-center">
-        <span><i class="fa-solid fa-magnifying-glass"></i></span>
-        <span><i class="fa-solid fa-cart-shopping"></i></span>
-        <button class="border rounded-sm border-[#179800] py-0.5 px-3">
-          Login
+        <!-- Desktop Actions -->
+        <div class="hidden md:flex items-center gap-4">
+          <!-- Search -->
+          <button class="cursor-pointer">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+
+          <!-- Cart -->
+          <button class="cursor-pointer">
+            <i class="fa-solid fa-cart-shopping"></i>
+          </button>
+
+          <!-- Login -->
+          <button
+            class="border border-[#179800] rounded-sm px-4 py-1 cursor-pointer"
+          >
+            Login
+          </button>
+
+          <!-- Register -->
+          <button
+            class="bg-[#179800] text-white rounded-sm px-4 py-1 cursor-pointer"
+          >
+            Register
+          </button>
+        </div>
+
+        <!-- Mobile Hamburger -->
+        <button class="md:hidden text-xl">
+          <i class="fa-solid fa-bars"></i>
         </button>
-        <button class="rounded-sm text-white bg-[#179800] py-0.5 px-3">
-          Register
-        </button>
+      </nav>
+
+      <!-- Hero Section -->
+      <section class="w-[90%] md:w-4/5 mx-auto flex flex-col mt-15 gap-6">
+        <div class="max-w-[60%] mx-auto *:py-3">
+          <h1 class="text-4xl text-center font-bold">
+            Freshness
+            <span class="text-[#179800]"
+              >You Can <br />
+              Count</span
+            >
+            On, Prices You’ll Love!
+          </h1>
+
+          <p class="text-center">
+            Shop your daily essentials at unbeatable prices. From fresh produce
+            to pantry <br />staples, we’ve got you covered every day!
+          </p>
+        </div>
+
+        <img
+          src="./assets/Hero Section 1.png"
+          alt=""
+          class="h-[600px] w-auto mx-auto"
+        />
+      </section>
+      <!-- End Hero Section -->
+    </header>
+
+    <!-- Services Section -->
+    <section class="w-[90%] md:w-4/5 mx-auto mt-20">
+      <h1 class="text-2xl font-bold text-[#179800]">Services</h1>
+
+      <div class="grid grid-cols-3 gap-5 mt-10">
+        <div class="p-8 bg-[#EFEBE3] text-center rounded-md">
+          <div
+            class="bg-white rounded-full w-30 h-30 flex justify-center items-center mx-auto p-4"
+          >
+            <img src="./assets/service.png" alt="" class="mx-auto" />
+          </div>
+          <h2 class="text-xl font-bold mt-3">24/7 Services</h2>
+          <p class="text-sm mt-3">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt
+          </p>
+        </div>
+
+        <div class="p-8 bg-[#EFEBE3] text-center rounded-md">
+          <div
+            class="bg-white rounded-full w-30 h-30 flex justify-center items-center mx-auto p-4"
+          >
+            <img src="./assets/delivery.png" alt="" class="mx-auto" />
+          </div>
+          <h2 class="text-xl font-bold mt-3">Fast Delivery</h2>
+          <p class="text-sm mt-3">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt
+          </p>
+        </div>
+        
+        <div class="p-8 bg-[#EFEBE3] text-center rounded-md">
+          <div
+            class="bg-white rounded-full w-30 h-30 flex justify-center items-center mx-auto p-4"
+          >
+            <img src="./assets/products.png" alt="" class="mx-auto" />
+          </div>
+          <h2 class="text-xl font-bold mt-3">Healthy Products </h2>
+          <p class="text-sm mt-3">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt
+          </p>
+        </div>
+
       </div>
-    </nav>
+    </section>
+    <!-- End Service Section -->
   </body>
 </html>
