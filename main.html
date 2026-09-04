@@ -267,7 +267,7 @@
     </section>
     <!-- End Popular Section -->
 
-    <!-- Arraival Offer Section -->
+    <!-- Arrival Offer Section -->
     <section class="w-[90%] md:w-4/5 mx-auto mb-20">
       <h1 class="text-2xl text-[#179800] font-bold mb-4">Arrival & Offers</h1>
 
@@ -310,39 +310,41 @@
     <!-- End Arrival Offer Section -->
 
     <footer class="w-full">
-      <div class=" bg-white">
-
+      <!-- Relative Parent Container -->
+      <div class="bg-white">
         <!-- Get Grocery News! Section -->
-        <section
-          class="w-[90%] h-[457px] md:w-4/5 mx-auto translate-y-1/2 bg-[#EFEBE3] rounded-lg"
-        >
-          <div class="grid grid-cols-2 gap-4 py-10 px-8">
-            <div>
-              <img
-                src="./assets/grocery-basket.png"
-                alt=""
-                class="w-full max-w-[442px] h-auto"
-              />
-            </div>
+        <div class="w-[90%] md:w-4/5 mx-auto relative mt-30 h-[228px]">
+          <section
+            class="w-full h-[457px] absolute top-0 left-0 bg-[#EFEBE3] rounded-lg z-10 shadow-sm"
+          >
+            <div class="grid grid-cols-2 gap-4 py-10 px-8">
+              <div>
+                <img
+                  src="./assets/grocery-basket.png"
+                  alt=""
+                  class="w-full max-w-[442px] h-auto"
+                />
+              </div>
 
-            <div class="flex flex-col justify-center gap-4">
-              <h2 class="text-2xl font-bold">Get Grocery News!</h2>
-              <p class="text-sm">
-                Exclusive training tips, ticks, product deals and more.
-              </p>
-              <input
-                type="text"
-                placeholder="Enter your email"
-                class="border border-gray-300 bg-white rounded-md px-4 py-2 w-[472px]"
-              />
-              <button
-                class="bg-[#179900] text-white text-sm py-2 px-4 rounded-md hover:bg-[#107a00] w-30"
-              >
-                Subscribe
-              </button>
+              <div class="flex flex-col justify-center gap-4">
+                <h2 class="text-2xl font-bold">Get Grocery News!</h2>
+                <p class="text-sm">
+                  Exclusive training tips, ticks, product deals and more.
+                </p>
+                <input
+                  type="text"
+                  placeholder="Enter your email"
+                  class="border border-gray-300 bg-white rounded-md px-4 py-2 w-[472px] max-w-full"
+                />
+                <button
+                  class="bg-[#179900] text-white text-sm py-2 px-4 rounded-md hover:bg-[#107a00] w-30"
+                >
+                  Subscribe
+                </button>
+              </div>
             </div>
-          </div>
-        </section>
+          </section>
+        </div>
         <!-- End Get Grocery News! Section -->
 
         <!-- Main Footer Section -->
@@ -358,11 +360,10 @@
                 class="h-[50px] md:h-[60px] w-auto"
               />
               <p class="text-white text-lg mt-3 tracking-wide">
-                Discover a world of treats, toys, and <br>essentials handpicked for
-                your furry <br>friends
+                Discover a world of treats, toys, and <br />essentials
+                handpicked for your furry <br />friends
               </p>
             </div>
-            <!-- End Brand Info -->
 
             <!-- Footer Links -->
             <div>
@@ -372,7 +373,6 @@
                 <li><a href="#" class="hover:underline">Contact us</a></li>
               </ul>
             </div>
-            <!-- End Footer Links -->
 
             <!-- Footer Social Media -->
             <div class="space-y-2">
@@ -384,8 +384,6 @@
                 <a href="#"><i class="fab fa-youtube"></i></a>
               </div>
             </div>
-            <!-- End Footer Social Media -->
-
           </div>
         </div>
         <!-- End Main Footer Section -->
